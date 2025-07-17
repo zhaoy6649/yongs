@@ -25,7 +25,7 @@ const API_SITES = {
     dyttzy: {
         api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
         name: '电影天堂资源',
-        detail: 'http://caiji.dyttzyapi.com', 
+        detail: 'http://caiji.dyttyapi.com', 
     },
     ruyi: {
         api: 'https://cj.rycjapi.com/api.php/provide/vod',
@@ -39,10 +39,6 @@ const API_SITES = {
         api: 'https://tyyszy.com/api.php/provide/vod',
         name: '天涯资源',
     },
-    // xiaomaomi: {
-    //     api: 'https://zy.xiaomaomi.cc/api.php/provide/vod',
-    //     name: '小猫咪资源',
-    // },
     ffzy: {
         api: 'http://ffzy5.tv/api.php/provide/vod',
         name: '非凡影视',
@@ -111,60 +107,51 @@ const API_SITES = {
         name: 'iKun资源'
     },
     testSource: {
-        api: 'https://www.example.com/api.php/provide/vod',
+        api: 'https://www.example.com/api.php/provide/vod', // 无效占位符，需替换为真实成人内容 API
         name: '空内容测试源',
         adult: true
     },
-    // 下面是一些成人内容的API源，默认隐藏，使用本项目浏览黄色内容违背项目初衷
-    // 互联网上传播的色情内容将人彻底客体化、工具化，是性别解放和人类平等道路上的巨大障碍。
-    // 这些黄色影片是资本主义父权制压迫的最恶毒体现，它将暴力和屈辱商品化，践踏人的尊严，对受害者造成无法弥愈的伤害，并毒害社会关系。
-    // 资本为了利润，不惜将最卑劣的剥削（包括对受害者和表演者的剥削）和暴力商品化，
-    // 把性别剥削塑造成“性享受”麻痹观众的意识，转移我们对现实生活中矛盾和压迫的注意力。
-    // 这些影片和背后的产业已经使数百万男女“下海”，出卖自己的身体，甚至以此为生计。
-    // 而作为观众无辜吗？毫无疑问，他们促成了黄色产业链的再生产。
-    // 我们提供此警告，是希望您能认清这些内容的本质——它们是压迫和奴役的工具，而非娱乐。
     ckzy: {
-        api: 'https://www.ckzy1.com',
+        api: 'https://www.ckzy1.com/api.php/provide/vod', // 假设添加正确路径，需验证
         name: 'CK资源',
         adult: true
     },
     jkun: {
-        api: 'https://jkunzyapi.com',
+        api: 'https://jkunzyapi.com/api.php/provide/vod', // 假设添加正确路径，需验证
         name: 'jkun资源',
         adult: true
     },
     bwzy: {
-        api: 'https://api.bwzym3u8.com',
+        api: 'https://api.bwzym3u8.com/api.php/provide/vod', // 假设添加正确路径，需验证
         name: '百万资源',
         adult: true
     },
     souav: {
-        api: 'https://api.souavzy.vip',
+        api: 'https://api.souavzy.vip/api.php/provide/vod', // 假设添加正确路径，需验证
         name: 'souav资源',
         adult: true
     },
     r155: {
-        api: 'https://155api.com',
+        api: 'https://155api.com/api.php/provide/vod', // 假设添加正确路径，需验证
         name: '155资源',
         adult: true
     },
     lsb: {
-        api: 'https://apilsbzy1.com',
+        api: 'https://apilsbzy1.com/api.php/provide/vod', // 假设添加正确路径，需验证
         name: 'lsb资源',
         adult: true
     },
     huangcang: {
-        api: 'https://hsckzy.vip',
+        api: 'https://hsckzy.vip/api.php/provide/vod', // 假设添加正确路径，需验证
         name: '黄色仓库',
         adult: true,
         detail: 'https://hsckzy.vip'
     },
     yutu: {
-        api: 'https://yutuzy10.com',
+        api: 'https://yutuzy10.com/api.php/provide/vod', // 假设添加正确路径，需验证
         name: '玉兔资源',
-        adult: true
+    //    adult: true
     },
-
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
     //     api: 'https://subocaiji.com/api.php/provide/vod',
@@ -223,7 +210,7 @@ const PLAYER_CONFIG = {
     allowFullscreen: true,
     width: '100%',
     height: '600',
-    timeout: 15000,  // 播放器加载超时时间
+    timeout: 15000,  // 播放器加载超时neuropsychiatric
     filterAds: true,  // 是否启用广告过滤
     autoPlayNext: true,  // 默认启用自动连播功能
     adFilteringEnabled: true, // 默认开启分片广告过滤
