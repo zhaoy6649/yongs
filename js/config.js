@@ -25,7 +25,7 @@ const API_SITES = {
     dyttzy: {
         api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
         name: '电影天堂资源',
-        detail: 'http://caiji.dyttyapi.com', 
+        detail: 'http://caiji.dyttzyapi.com', 
     },
     ruyi: {
         api: 'https://cj.rycjapi.com/api.php/provide/vod',
@@ -107,51 +107,43 @@ const API_SITES = {
         name: 'iKun资源'
     },
     testSource: {
-        api: 'https://www.example.com/api.php/provide/vod', // 无效占位符，需替换为真实成人内容 API
+        api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
         adult: true
     },
     ckzy: {
-        api: 'https://www.ckzy1.com/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://www.ckzy1.com', // 需要验证，可能添加 /api.php/provide/vod
         name: 'CK资源',
-        adult: true
     },
     jkun: {
-        api: 'https://jkunzyapi.com/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://jkunzyapi.com', // 需要验证，可能添加 /api.php/provide/vod
         name: 'jkun资源',
-        adult: true
     },
     bwzy: {
-        api: 'https://api.bwzym3u8.com/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://api.bwzym3u8.com', // 需要验证，可能添加 /api.php/provide/vod
         name: '百万资源',
-        adult: true
     },
     souav: {
-        api: 'https://api.souavzy.vip/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://api.souavzy.vip', // 需要验证，可能添加 /api.php/provide/vod
         name: 'souav资源',
-        adult: true
     },
     r155: {
-        api: 'https://155api.com/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://155api.com', // 需要验证，可能添加 /api.php/provide/vod
         name: '155资源',
-        adult: true
-    },
+        },
     lsb: {
-        api: 'https://apilsbzy1.com/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://apilsbzy1.com', // 需要验证，可能添加 /api.php/provide/vod
         name: 'lsb资源',
-        adult: true
     },
     huangcang: {
-        api: 'https://hsckzy.vip/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://hsckzy.vip', // 需要验证，可能添加 /api.php/provide/vod
         name: '黄色仓库',
-        adult: true,
-        detail: 'https://hsckzy.vip'
+               detail: 'https://hsckzy.vip'
     },
     yutu: {
-        api: 'https://yutuzy10.com/api.php/provide/vod', // 假设添加正确路径，需验证
+        api: 'https://yutuzy10.com', // 需要验证，可能添加 /api.php/provide/vod
         name: '玉兔资源',
-    //    adult: true
-    },
+      },
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
     //     api: 'https://subocaiji.com/api.php/provide/vod',
@@ -210,7 +202,7 @@ const PLAYER_CONFIG = {
     allowFullscreen: true,
     width: '100%',
     height: '600',
-    timeout: 15000,  // 播放器加载超时neuropsychiatric
+    timeout: 15000,  // 播放器加载超时时间
     filterAds: true,  // 是否启用广告过滤
     autoPlayNext: true,  // 默认启用自动连播功能
     adFilteringEnabled: true, // 默认开启分片广告过滤
@@ -243,8 +235,8 @@ const CUSTOM_API_CONFIG = {
     validateUrl: true,        // 验证URL格式
     cacheResults: true,       // 缓存测试结果
     cacheExpiry: 5184000000,  // 缓存过期时间(2个月)
-    adultPropName: 'isAdult' // 用于标记成人内容的属性名
+ //   adultPropName: 'isAdult' // 用于标记成人内容的属性名
 };
 
 // 隐藏内置黄色采集站API的变量
-const HIDE_BUILTIN_ADULT_APIS = false;
+//const HIDE_BUILTIN_ADULT_APIS = false;
