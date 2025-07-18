@@ -110,12 +110,7 @@ const API_SITES = {
     ikun: {
         api: 'https://ikunzyapi.com/api.php/provide/vod',
         name: 'iKun资源'
-    },
-    testSource: {
-        api: 'https://www.example.com/api.php/provide/vod',
-        name: '空内容测试源',
-      },
-     ckzy: {
+   ckzy: {
          api: 'https://www.ckzy1.com/api.php/provide/vod',
          name: 'CK资源',
      },
