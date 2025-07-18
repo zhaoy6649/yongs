@@ -1,4 +1,3 @@
-
 // 全局常量配置
 const PROXY_URL = '/proxy/';    // 适用于 Cloudflare, Netlify (带重写), Vercel (带重写)
 // const HOPLAYER_URL = 'https://hoplayer.com/index.html';
@@ -89,60 +88,74 @@ const API_SITES = {
     },
     zuid: {
         api: 'https://api.zuidapi.com/api.php/provide/vod',
-        name: '最大资源',
+        name: '最大资源'
     },
     yinghua: {
         api: 'https://m3u8.apiyhzy.com/api.php/provide/vod',
-        name: '樱花资源',
+        name: '樱花资源'
     },
     baidu: {
         api: 'https://api.apibdzy.com/api.php/provide/vod',
-        name: '百度云资源',
+        name: '百度云资源'
     },
     wujin: {
         api: 'https://api.wujinapi.me/api.php/provide/vod',
-        name: '无尽资源',
+        name: '无尽资源'
     },
     wwzy: {
         api: 'https://wwzy.tv/api.php/provide/vod',
-        name: '旺旺短剧',
+        name: '旺旺短剧'
     },
     ikun: {
         api: 'https://ikunzyapi.com/api.php/provide/vod',
-        name: 'iKun资源',
-   ckzy: {
-         api: 'https://www.ckzy1.com/api.php/provide/vod',
-         name: 'CK资源',
-     },
-     jkun: {
-         api: 'https://jkunzyapi.com/api.php/provide/vod',
-         name: 'jkun资源',
-     },
-     bwzy: {
-         api: 'https://api.bwzym3u8.com/api.php/provide/vod',
-         name: '百万资源',
-     },
-     souav: {
-         api: 'https://api.souavzy.vip/api.php/provide/vod',
-         name: 'souav资源',
-     },
-     r155: {
-         api: 'https://155api.com/api.php/provide/vod',
-         name: '155资源',
-     },
-     lsb: {
-         api: 'https://apilsbzy1.com/api.php/provide/vod',
-         name: 'lsb资源',
-     },
-     huangcang: {
-         api: 'https://hsckzy.vip/api.php/provide/vod',
-         name: '黄色仓库',
-         detail: 'https://hsckzy.vip/api.php/provide/vod'
-     },
-     yutu: {
-         api: 'https://yutuzy10.com/api.php/provide/vod',
-         name: '玉兔资源',
-     },
+        name: 'iKun资源'
+    },
+    testSource: {
+        api: 'https://www.example.com/api.php/provide/vod',
+        name: '空内容测试源',
+        adult: true
+    },
+    ckzy: {
+     api: 'https://www.ckzy1.com/api.php/provide/vod',
+     name: 'CK资源',
+     adult: true
+    },
+ jkun: {
+     api: 'https://jkunzyapi.com/api.php/provide/vod',
+     name: 'jkun资源',
+     adult: true
+    },
+ bwzy: {
+     api: 'https://api.bwzym3u8.com/api.php/provide/vod',
+     name: '百万资源',
+     adult: true
+    },
+ souav: {
+     api: 'https://api.souavzy.vip/api.php/provide/vod',
+     name: 'souav资源',
+     adult: true
+    },
+ r155: {
+     api: 'https://155api.com/api.php/provide/vod',
+     name: '155资源',
+     adult: true
+   },
+ lsb: {
+     api: 'https://apilsbzy1.com/api.php/provide/vod',
+     name: 'lsb资源',
+     adult: true
+   },
+ huangcang: {
+     api: 'https://hsckzy.vip/api.php/provide/vod',
+     name: '黄色仓库',
+     adult: true,
+     detail: 'https://hsckzy.vip/api.php/provide/vod'
+   },
+ yutu: {
+     api: 'https://yutuzy10.com/api.php/provide/vod',
+     name: '玉兔资源',
+     adult: true
+   },
 
     // 下面是资源失效率高的API源，不建议使用
     // subo: {
